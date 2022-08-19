@@ -67,7 +67,7 @@ class SumoEnv(gym.Env):
 		else:
 			#sumoBinary = "C:/Program Files (x86)/Eclipse/Sumo/bin/sumo"
 			#sumoCmd = [sumoBinary, "-c", r"C:\Users\vyshn\Desktop\custom-gym\offramps.sumocfg"]
-			traci.load(['-c',r"/Users/saidineshvasamsetti/Documents/custom-gym/offramps.sumocfg"])
+			traci.load(['-c',r"/Users/vyshnavi/Documents/custom-gym/offramps.sumocfg"])
 			print('Loading called')
 
 		self.lane_id_list = traci.lane.getIDList()
