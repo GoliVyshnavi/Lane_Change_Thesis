@@ -60,9 +60,9 @@ class SumoEnv(gym.Env):
 		self.terminal = False
 
 		if self.gui:
-			#sumoBinary = r"\Users\saidineshvasamsetti\Applications\SUMO-GUI.app"
+			#sumoBinary = r"\Users\vyshnavi\Applications\SUMO-GUI.app"
 			sumoBinary = sumolib.checkBinary('sumo-gui')
-			sumoCmd = [sumoBinary, "-c", r"/Users/saidineshvasamsetti/Documents/custom-gym/offramps.sumocfg"]
+			sumoCmd = [sumoBinary, "-c", r"/Users/vyshnavi/Documents/custom-gym/offramps.sumocfg"]
 			traci.start(sumoCmd) # opens and runs the sumoconfig file
 		else:
 			#sumoBinary = "C:/Program Files (x86)/Eclipse/Sumo/bin/sumo"
