@@ -1,0 +1,16 @@
+<configuration>
+    <input>
+        <net-file value="offramps.net.xml"/>
+        <route-files value="offramps.rou.xml"/>
+		<additional-files value="reroute.add.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="10000000"/>
+	<step-length value="0.4"/>
+    </time>
+	<simulation>
+    <start value = "1" />
+    <quit-on-end value = "1"/>
+	</simulation>
+</configuration>
